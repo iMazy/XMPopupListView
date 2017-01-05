@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.85249660326086962" green="0.85249660326086962" blue="0.85249660326086962" alpha="0.67148437500000002" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yTF-Bz-OiN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Bum-0q-P2d"/>
                             <constraint firstAttribute="trailing" secondItem="yTF-Bz-OiN" secondAttribute="trailing" constant="50" id="ITm-Hx-U7p"/>
