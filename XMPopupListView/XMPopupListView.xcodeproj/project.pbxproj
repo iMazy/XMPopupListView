@@ -14,6 +14,7 @@
 		9F5800131E1E310C00A2747B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5800121E1E310C00A2747B /* Assets.xcassets */; };
 		9F5800161E1E310C00A2747B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5800141E1E310C00A2747B /* LaunchScreen.storyboard */; };
 		9F5800201E1E318200A2747B /* XMPopupListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58001F1E1E318200A2747B /* XMPopupListView.m */; };
+		9F5800231E1E3A1B00A2747B /* QQ20170105-162233-HD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F5800221E1E3A1B00A2747B /* QQ20170105-162233-HD.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		9F5800171E1E310C00A2747B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F58001E1E1E318200A2747B /* XMPopupListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPopupListView.h; sourceTree = "<group>"; };
 		9F58001F1E1E318200A2747B /* XMPopupListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopupListView.m; sourceTree = "<group>"; };
-		9F5800211E1E37A900A2747B /* QQ20170105-161230-HD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QQ20170105-161230-HD.mp4"; sourceTree = "<group>"; };
+		9F5800221E1E3A1B00A2747B /* QQ20170105-162233-HD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "QQ20170105-162233-HD.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,7 @@
 		9F5800061E1E310C00A2747B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F5800211E1E37A900A2747B /* QQ20170105-161230-HD.mp4 */,
+				9F5800221E1E3A1B00A2747B /* QQ20170105-162233-HD.gif */,
 				9F58000F1E1E310C00A2747B /* Main.storyboard */,
 				9F5800121E1E310C00A2747B /* Assets.xcassets */,
 				9F5800141E1E310C00A2747B /* LaunchScreen.storyboard */,
@@ -153,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5800161E1E310C00A2747B /* LaunchScreen.storyboard in Resources */,
+				9F5800231E1E3A1B00A2747B /* QQ20170105-162233-HD.gif in Resources */,
 				9F5800131E1E310C00A2747B /* Assets.xcassets in Resources */,
 				9F5800111E1E310C00A2747B /* Main.storyboard in Resources */,
 			);
