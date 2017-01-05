@@ -13,6 +13,7 @@
 		9F5800111E1E310C00A2747B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F58000F1E1E310C00A2747B /* Main.storyboard */; };
 		9F5800131E1E310C00A2747B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5800121E1E310C00A2747B /* Assets.xcassets */; };
 		9F5800161E1E310C00A2747B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5800141E1E310C00A2747B /* LaunchScreen.storyboard */; };
+		9F5800201E1E318200A2747B /* XMPopupListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58001F1E1E318200A2747B /* XMPopupListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9F5800121E1E310C00A2747B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F5800151E1E310C00A2747B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F5800171E1E310C00A2747B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F58001E1E1E318200A2747B /* XMPopupListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPopupListView.h; sourceTree = "<group>"; };
+		9F58001F1E1E318200A2747B /* XMPopupListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopupListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 		9F5800051E1E310C00A2747B /* XMPopupListView */ = {
 			isa = PBXGroup;
 			children = (
+				9F58001D1E1E318200A2747B /* XMPopupListView */,
 				9F5800091E1E310C00A2747B /* AppDelegate.h */,
 				9F58000A1E1E310C00A2747B /* AppDelegate.m */,
 				9F58000C1E1E310C00A2747B /* ViewController.h */,
@@ -69,6 +73,15 @@
 				9F5800071E1E310C00A2747B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F58001D1E1E318200A2747B /* XMPopupListView */ = {
+			isa = PBXGroup;
+			children = (
+				9F58001E1E1E318200A2747B /* XMPopupListView.h */,
+				9F58001F1E1E318200A2747B /* XMPopupListView.m */,
+			);
+			path = XMPopupListView;
 			sourceTree = "<group>";
 		};
 		9F58FFFA1E1E310C00A2747B = {
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5800201E1E318200A2747B /* XMPopupListView.m in Sources */,
 				9F58000E1E1E310C00A2747B /* ViewController.m in Sources */,
 				9F58000B1E1E310C00A2747B /* AppDelegate.m in Sources */,
 				9F5800081E1E310C00A2747B /* main.m in Sources */,
