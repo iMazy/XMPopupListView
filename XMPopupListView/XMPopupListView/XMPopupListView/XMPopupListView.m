@@ -1,8 +1,7 @@
 //
 //  XMPopupListView.m
-//  Towatt_OA
 //
-//  Created by TwtMac on 16/12/28.
+//  Created by Mac on 16/12/28.
 //  Copyright © 2016年 Mazy. All rights reserved.
 //
 
@@ -10,10 +9,11 @@
 
 @interface XMPopupListView ()
 
-@property (nonatomic, strong) UIView *boundView; // 绑定的视图
-
+/** 绑定的视图 */
+@property (nonatomic, strong) UIView *boundView;
+/** tableView */
 @property (nonatomic, strong) UITableView *tableView;
-
+/** 是否展示中 */
 @property (nonatomic, assign) BOOL isShowing;
 
 @end
@@ -22,8 +22,7 @@
 
 - (id)initWithBoundView:(UIView *)boundView
              dataSource:(id)datasource
-               delegate:(id)delegate
-{
+               delegate:(id)delegate {
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGRect frame = CGRectMake(0.0f, -0.0f, screenBounds.size.width, screenBounds.size.height);
@@ -36,17 +35,19 @@
         self.dataSource = datasource;
         self.delegate = delegate;
         
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        self.tableView.dataSource = self;
-        self.tableView.delegate = self;
-        
-        self.tableView.clipsToBounds = YES;
-        self.tableView.layer.cornerRadius = 3.0f;
-        
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        self.tableView.backgroundColor = [UIColor whiteColor];
-        
+        /// 设置tableView
+        {
+            self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+            self.tableView.dataSource = self;
+            self.tableView.delegate = self;
+            
+            self.tableView.clipsToBounds = YES;
+            self.tableView.layer.cornerRadius = 3.0f;
+            
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            
+            self.tableView.backgroundColor = [UIColor whiteColor];
+        }
         
         self.boundView = boundView;
 
@@ -61,6 +62,10 @@
     self.boundView = boundView;
 }
 
+
+/**
+ 展示
+ */
 - (void)show {
     
     if (_isShowing) {
@@ -90,12 +95,14 @@
                                       44*rows);
     }];
     
-    
     self.isShowing = YES;
     
     [self.tableView reloadData];
 }
 
+/**
+ 隐藏
+ */
 - (void)dismiss {
     if (!self.isShowing) {
         return;
@@ -120,7 +127,7 @@
     [self.tableView reloadData];
 }
 
-#pragma mark -- UITableView Delegate
+#pragma mark -- UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.dataSource && [self.dataSource respondsToSelector:@selector(itemCellHeight:)]) {
         return [self.dataSource itemCellHeight:indexPath];
@@ -135,8 +142,7 @@
     [self dismiss];
 }
 
-#pragma mark -- UITableView DataSource
-
+#pragma mark -- UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfSections)]) {
         [self.dataSource numberOfSections];
